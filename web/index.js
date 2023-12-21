@@ -18,10 +18,7 @@ const loadData = (options) => {
 
 const App = (props) => {
   let [photos, setPhotos] = useState([]);
-  
-  // CHALLENGE:
-  // Change the query to one of your interests
-  let [query, setQuery] = useState("vampires");
+  let [query, setQuery] = useState("art");
   const queryInput = useRef(null);
 
   const numberOfPhotos = 20;
@@ -77,6 +74,4 @@ const App = (props) => {
     </div>
   );
 };
-
-// CHALLENGE: add your own name and emoji to the website
-ReactDOM.render(<App name="Per" emoji="🧛‍♂️"/>, document.getElementById("root"));
+ReactDOM.render(<App name="Maro" emoji="👩🏻‍🎨"/>, document.getElementById("root"));
